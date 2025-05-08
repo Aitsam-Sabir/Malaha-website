@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Malaha Industry</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +15,7 @@
       color: #333;
     }
     header {
-      background: linear-gradient(135deg, #000000, #444444);
+      background: linear-gradient(135deg, #ff4e50, #f9d423);
       color: white;
       padding: 20px 40px;
       text-align: center;
@@ -20,7 +23,7 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #1c1c1c;
+      background-color: #ff4e50;
       padding: 10px;
     }
     nav a {
@@ -33,27 +36,39 @@
       text-decoration: underline;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1602810317172-f8594a0e63eb?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 120px 20px;
+      min-height: 400px;
     }
     .hero h1 {
-      font-size: 48px;
-      background-color: rgba(0,0,0,0.5);
+      font-size: 54px;
+      background-color: rgba(0,0,0,0.6);
       display: inline-block;
-      padding: 10px 20px;
-      border-radius: 10px;
+      padding: 15px 25px;
+      border-radius: 12px;
+      text-shadow: 1px 1px 5px #000;
+    }
+    .hero p {
+      font-size: 22px;
+      margin-top: 15px;
+      background-color: rgba(0,0,0,0.4);
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 8px;
     }
     .section {
-      padding: 60px 20px;
+      padding: 80px 20px;
+      margin-top: 20px;
       max-width: 1100px;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
     .section h2 {
-      color: #111;
+      color: #ff4e50;
       margin-bottom: 30px;
-      border-bottom: 3px solid #000;
+      border-bottom: 3px solid #f9d423;
       display: inline-block;
     }
     .features-grid {
@@ -62,7 +77,7 @@
       gap: 25px;
     }
     .feature {
-      background: white;
+      background: #fff8f0;
       padding: 25px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -77,13 +92,13 @@
       margin-bottom: 15px;
     }
     footer {
-      background-color: #111;
+      background-color: #222;
       color: white;
       text-align: center;
       padding: 30px;
     }
     .contact {
-      background: #f0f0f0;
+      background: #ffefd5;
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -94,6 +109,7 @@
   <header>
     <h1>Malaha Industry</h1>
     <p>Custom Apparel Manufacturer – Streetwear | Tracksuits | Hoodies | Jerseys | Polos & More</p>
+    <p><em>Your brand success matters</em></p>
   </header>
 
   <nav>
@@ -104,8 +120,8 @@
   </nav>
 
   <section class="hero">
-    <h1>Custom-Made Apparel for Global Brands</h1>
-    <p>Premium Quality • Fast Turnaround • Worldwide Shipping</p>
+    <h1 style="color: #f9d423; text-shadow: 2px 2px #000;">Custom Made Apparel For Global Brands</h1>
+    <p style="font-weight: bold; font-size: 24px; background-color: rgba(255,255,255,0.2); color: #fff">High-Quality. Fast Turnaround. Trusted Worldwide.</p>
   </section>
 
   <section id="services" class="section">
@@ -125,6 +141,16 @@
         <img src="https://images.unsplash.com/photo-1618354691373-fb0b4c61d40d?auto=format&fit=crop&w=800&q=60" alt="Shipping">
         <h3>Fast Global Shipping</h3>
         <p>We ship worldwide with a fast turnaround time of 8–12 business days.</p>
+      </div>
+      <div class="feature">
+        <img src="https://images.unsplash.com/photo-1612423284934-d2de9e5f2b19?auto=format&fit=crop&w=800&q=60" alt="Printing Options">
+        <h3>Printing Options</h3>
+        <p>From screen printing to DTG and 3D puff, we support modern printing techniques to match your vision.</p>
+      </div>
+      <div class="feature">
+        <img src="https://images.unsplash.com/photo-1593032465175-9c52c6819eb8?auto=format&fit=crop&w=800&q=60" alt="Embroidery Detail">
+        <h3>Embroidery Excellence</h3>
+        <p>Professional embroidery services including distressed and patch styles to make your designs pop.</p>
       </div>
     </div>
   </section>
